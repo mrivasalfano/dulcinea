@@ -1,26 +1,24 @@
+:root {
+  --background-color: #F4EBD9;
+  --background-secondary-color: #4C1C03;
+  --primary-color: #058ED9;
+  --text-color: #373433;
+  --header-height: 60px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+ul, ol {
+  list-style: none;
 }
