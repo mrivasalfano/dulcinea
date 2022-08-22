@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React, { FC, useState } from 'react';
 import styles from './Header.module.css'
-import HeaderBurger from './HeaderBurger';
-import HeaderNavbar from './HeaderNavbar';
+import HeaderBurger from './burger/HeaderBurger';
+import HeaderNavbar from './navbar/HeaderNavbar';
 import logo from '../../public/logo.png'
 
 const Header: FC = () => {
