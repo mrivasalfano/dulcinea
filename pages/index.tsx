@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
 import CalculateOrder from '../components/calculate-order/CalculateOrder'
 import Head from 'next/head'
-import { Container, Typography,} from '@mui/material'
+import { Container, SpeedDial, SpeedDialAction, SpeedDialIcon, Typography,} from '@mui/material'
 import ProductSlider from '../components/product-slider/ProductSlider'
 import Navbar from '../components/Navbar/Navbar'
+import FloatingBox from '../components/floating-box/FloatingBox'
 
 const products = [{
     imageUri: '/images/products/cakes/chaja.jpg',
@@ -65,10 +66,7 @@ const Home: NextPage = () => {
         <Typography variant='h5'>Nuestros productos</Typography>
         <ProductSlider products={products}/>
       </Container>
-      <Container id="tools">
-        <Typography variant='h5'>Herramientas</Typography>
-        <CalculateOrder/>
-      </Container>
+      <FloatingBox></FloatingBox>    
     </>
   )
 }

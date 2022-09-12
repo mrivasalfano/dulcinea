@@ -1,4 +1,5 @@
-import { Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField } from '@mui/material'
+import { Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@mui/material'
+import { Stack } from '@mui/system'
 import { FC, useState } from 'react'
 
 enum OrderType {
@@ -39,8 +40,12 @@ const CalculateOrder: FC = () => {
     }
 
     return (
-        <div>
-            <h3>Calcule el costo de su pedido</h3>
+        <Stack 
+            direction="column"
+            justifyContent="center"
+            alignItems="center"
+        >
+            <Typography variant='h5'>Calculá tu pedido</Typography>
             <FormControl>
                 <RadioGroup
                     name="order"
@@ -58,7 +63,7 @@ const CalculateOrder: FC = () => {
                 )}
                 <Button variant='contained' onClick={calculateOrder}>Calcular</Button>
             </FormControl>
-        </div>
+        </Stack>
     )
 }
 
